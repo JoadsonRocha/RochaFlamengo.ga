@@ -1,0 +1,116 @@
+﻿@charset "UTF-8";
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@font-face {
+	font-family: 'fonttitulo';
+	src: url("../_fonts/RobotoSlab-Bold.ttf");
+}
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+@font-face {font-family: 'fontpub';
+    src: url("../_fonts/FjallaOne-Regular.ttf");}
+/*corpo da página*/
+.corpo {
+      
+        margin-left: 300px;
+        margin-top: 200px;
+}
+/*corpo do post div*/
+div#artigo {
+        float: left;
+        width: 100%;        
+        height: auto;       
+}
+.corpo {
+        width: 700px;
+    }
+@media (max-width: 1024px){
+     .corpo{
+             width: 96%;
+             margin-left: 2%;
+             margin-right: 2%;
+                
+            }
+      }
+      /*font do artigo*/
+.artigo h1 {
+    font-family: 'fonttitulo';
+    font-size: 30pt;
+    text-align: center;
+    color: red;
+}
+.artigo h2 {
+    font-family: 'fonttitulo';
+    text-align: center;
+    color: red;
+}
+/*corpo do artigo */
+.artigo p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    text-indent: 20pt;
+    text-align: justify;
+    line-height: 30pt;
+}
+
+/*titulo dos creditos imagens*/
+.artigo h6 {
+    font-size: 9pt;
+    color: gray;
+}
+@media (max-width: 1024px) {
+    .corpo p {
+        font-size: 12pt;
+        line-height: 15pt;
+    }
+}
+@media (max-width: 1024px) {
+    .corpo h1 {
+        font-size: 15pt;
+        
+    }
+}
+    
+
+
+/*listas de navegação abaixo*/
+
+#post {
+    max-width:50%;
+    border-top: 1px solid red;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    top: 100px;
+
+ }
+@media (min-width:700px){
+        #post {width: 50%;
+        }
+    }
+
+@media (max-width: 1024px){
+    #post{font-size: 10pt;}
+}
+#foto {
+    width: 100%;    
+    margin: 3px;
+}
+@media (min-width: 700px){
+    #foto {width: 30%;
+            float: left;}
+}
+#post h2 {
+    font-family: 'fontpub';
+    text-align: left;
+    color: red;
+    
+}
+#post p {
+    text-align: justify;
+    color:gray;
+}
+#post a {
+    text-decoration: none;
+    color: red;
+}

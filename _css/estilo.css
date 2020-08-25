@@ -1,0 +1,151 @@
+﻿@chaset "utf-8";
+/*fontes*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@font-face {
+	font-family: 'fontLogo';
+	src: url("../_fonts/RobotoSlab-Bold.ttf");
+}
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+@font-face {font-family: 'fontpost';
+    src: url("../_fonts/FjallaOne-Regular.ttf");}
+
+/*cabeçalho */
+* { margin: 0; padding: 0;}
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: red;
+}
+/* cabeçalho fixo*/
+header#cabecalho {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 45px;
+    width: 100%;    
+}
+
+/*Nome do cabeçalho */
+#menu li {list-style: none;
+    font-family: 'fontLogo';
+    text-align: center;
+    font-size: 100%;
+    color: white;
+    margin-top: -20px;
+    
+    }
+/*computador layout*/
+@media (min-width: 700px){
+    #menu li {
+        font-size: 25pt;
+        color: white;
+    }
+}
+/* menu imagem*/
+#logomenu {
+   
+    display: inline;
+    float: left;
+    width: 35px;
+    margin-left: 0;
+}
+@media  (min-width: 700px){
+    #logomenu {
+        width:50px;
+        margin-left: 20px;
+    }
+}
+/*Corpo da página*/
+.corpohome {
+    width: 100%;
+    margin-top: 200px;
+}
+/* Coorpo das noticias-home*/
+/*para mobile*/
+.textbox {
+    float: left;
+    width: 96%;
+    height: auto;
+    margin-left: 1%;
+    margin-right: 3%;
+    margin: 2px;
+    border: 3px solid white;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.3);
+    border-radius: 10px;
+    padding: 5px 3px;
+}
+/*layout desktop*/
+@media only screen and (min-width: 1024px){
+    .textbox{
+    float: left;
+    width: 30%;
+    height: 350px;
+    margin: 5px;
+    margin-left: 2px;   
+    }
+}
+
+/*fontes dos post home*/
+div#textbox p {
+    font-family: Arial;
+    font-size: 100%;
+}
+div#textbox h2 {
+    font-family:'fontpost';
+    
+}
+/*imagens dos posts*/
+.tela {
+    width: 99%;
+    height: 50%;
+    border-radius: 10px;
+}	
+@media (min-width: 700px){
+   .tela {
+            width: 100%;
+            border-radius: 10px;
+            height: 50%;
+        }
+    }
+/*Link do post*/
+div#textbox a {
+    color:red;
+    text-decoration: none;
+}
+
+ul#menufixo {
+    list-style: none;
+    padding: 1.5%;
+}
+/*Botão curtir e compartilhar do facebook*/
+ul#menufixo {
+    position: fixed;
+    right: 0;    
+    width: 8em;
+    top: 50%;
+    margin-top: 2.5em;
+}
+/*facebook*/
+.fb-like {
+    right:0px;
+}
+/*rodapé da página*/
+footer#rodape {
+    clear: both;
+    border-top: 1px solid red;    
+}
+footer#rodape {
+    font-family: 'fontLogo';
+    font-size: 12pt;
+    text-align: center;
+}
+footer#rodape a {
+    color: red;
+    text-decoration: none;
+}
+@media (max-width: 1024px){
+    .rodape p { font-size: 10pt;
+    
+    }
+}
